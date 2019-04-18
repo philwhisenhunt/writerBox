@@ -1,3 +1,13 @@
-li{
-    color: blue;
+.snippet-title{
+    color: red;
+}
+
+.snippet-title {
+    
+}
+
+a{
+    color:red;
+    text-decoration-color: red;
+    text-decoration: none;
 }
