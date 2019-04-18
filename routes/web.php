@@ -20,3 +20,5 @@ Route::get('/test', function (){
    
     return view('welcome', ['data2'=> $data2['hello']]);
 });
+
+Route::get('/snippets', 'SnippetsController@index');
