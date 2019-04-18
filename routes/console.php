@@ -16,3 +16,8 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('flip', function(){
+    $this->comment('Flipping a table');
+
+})->describe('Says it flipped a table but it didn\'t really');
