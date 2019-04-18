@@ -10,6 +10,12 @@
     </head>
     <body>
      <h1>Snippets</h1>
+
+     @foreach ($snippets as $snippet)
+        <li>{{ $snippet->title }}</li>
+
+        <p>{{ $snippet->full_entry }}</p>
+     @endforeach
         
         <script src="" async defer></script>
     </body>

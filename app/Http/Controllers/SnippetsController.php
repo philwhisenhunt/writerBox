@@ -11,7 +11,7 @@ class SnippetsController extends Controller
     public function index(){
 
         $snippets = \App\Snippets::all();
-        return $snippets;
-        return view('snippets.index', ['snippets' => $projects]);
+        //return $snippets;
+        return view('snippets.index', ['snippets' => $snippets]);
     }
 }
