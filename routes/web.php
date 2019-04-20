@@ -22,3 +22,7 @@ Route::get('/test', function (){
 });
 
 Route::get('/snippets', 'SnippetsController@index');
+
+Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
+
+Route::get('/snippets/create', 'SnippetsController@create');
