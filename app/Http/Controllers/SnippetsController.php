@@ -24,4 +24,8 @@ class SnippetsController extends Controller
         $snippets = \App\Snippets::all();
         return view('snippets.create');
     }
+
+    public function post(){
+        //the post data is received and assigned to a variable and posted to the database
+    }
 }

@@ -13,12 +13,12 @@
 
         </h1>
      
-        <form action="">
+        <form action="POST" name="blog-form">
             <div>
                 <input class="title-input" type="text" name="title">
                 <input class = "text-input" type="text" name="body">
 
-                <button>Submit</button>
+                <button name="submit-button">Submit</button>
 
             </div>
 
