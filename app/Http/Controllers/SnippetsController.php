@@ -27,5 +27,9 @@ class SnippetsController extends Controller
 
     public function post(){
         //the post data is received and assigned to a variable and posted to the database
+       // $theData = sql query here ;
+       //return a single post
+       return view('snippets.post');
+
     }
 }
