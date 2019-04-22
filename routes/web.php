@@ -21,10 +21,10 @@ Route::get('/test', function (){
     return view('welcome', ['data2'=> $data2['hello']]);
 });
 
-Route::get('/snippets', 'SnippetsController@index');
+//Route::get('/snippets', 'SnippetsController@index');
 
 Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
 
-Route::get('/snippets/create', 'SnippetsController@create');
+//Route::get('/snippets/create', 'SnippetsController@create');
 
 Route::get('/snippets/post', 'SnippetsController@post');

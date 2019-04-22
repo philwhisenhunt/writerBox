@@ -12,11 +12,14 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        @foreach ($theData as $piece){
-            <li>{{ $piece->name }</li>
-        }
-        @endforeach
-        
+    <ul>
+    @foreach($theData as $user)
+       
+            <li> {{ $user->name }} </li>
+       
+    
+    @endforeach
+    </ul>
         <script src="" async defer></script>
     </body>
 </html>

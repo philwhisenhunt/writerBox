@@ -31,8 +31,9 @@ class SnippetsController extends Controller
        // $theData = sql query here ;
        $theData = DB::table('users')->get();
        //return a single post
-       dd($theData[0]->name);
-       //return view('snippets.post', ['theData'=>$theData]);
+       //dd($theData[0]->name);
+        
+       return view('snippets.post', ['theData'=>$theData]);
 
     }
 }
