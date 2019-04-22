@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use Illuminate\Support\Facades\DB;
 
 class SnippetsController extends Controller
 {
@@ -28,8 +29,10 @@ class SnippetsController extends Controller
     public function post(){
         //the post data is received and assigned to a variable and posted to the database
        // $theData = sql query here ;
+       $theData = DB::table('users')->get();
        //return a single post
-       return view('snippets.post');
+       dd($theData[0]->name);
+       //return view('snippets.post', ['theData'=>$theData]);
 
     }
 }
