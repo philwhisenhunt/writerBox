@@ -30,6 +30,7 @@ class SnippetsController extends Controller
         //the post data is received and assigned to a variable and posted to the database
        // $theData = sql query here ;
        $theData = DB::table('users')->get();
+       dump($theData);
        //return a single post
        //dd($theData[0]->name);
         
