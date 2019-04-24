@@ -34,3 +34,12 @@ Route::get('/users/{user}', function (App\User $user) {
 });
 
 Route::get('/snippets', 'SnippetsController@show');
+
+/*
+GET /snippets (index of all of them)
+GET /snippets/create (create a new one)
+GET /snippets/1 (show an existing one with an id that matches 1)
+POST /snippets (store)
+GET /projects/1/edit (edit)
+PATCH /projects/1 (update)
+DELETE /projects/1 (destroy)

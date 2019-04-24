@@ -26,23 +26,13 @@ class SnippetsController extends Controller
         return view('snippets.create');
     }
 
-    public function show(){
+    public function show($id){
 
-        $snippets = Snippet::all();
-        //dump($snippets[0]);
-       // $snippets = [1,2,3,4,5];
-       // return $snippets;
-        // $snippet = DB::findOrFail($id);
-        // return $snippet;
-       
-        /*
-       $theData = DB::table('users')->get();
-       $stats = cache()->get('stats');
-       dump($stats);
-       */
+        $snippets = Snippet::findOrFail($id);
+     
     
         
-       return view('snippets.post', ['snippets' => $snippets]);
+       return view('snippets.show', compact($snippets));
 
     }
 }
