@@ -27,4 +27,8 @@ Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
 
 //Route::get('/snippets/create', 'SnippetsController@create');
 
-Route::get('/snippets/post', 'SnippetsController@show');
+Route::get('/snippets/post{$id}', 'SnippetsController@show');
+
+Route::get('/users/{user}', function (App\User $user) {
+    return $user->email;
+});
