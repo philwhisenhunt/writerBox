@@ -27,4 +27,4 @@ Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
 
 //Route::get('/snippets/create', 'SnippetsController@create');
 
-Route::get('/snippets/post', 'SnippetsController@post');
+Route::get('/snippets/post', 'SnippetsController@show');

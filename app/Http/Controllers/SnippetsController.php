@@ -26,7 +26,7 @@ class SnippetsController extends Controller
         return view('snippets.create');
     }
 
-    public function post(){
+    public function show(){
         //the post data is received and assigned to a variable and posted to the database
        // $theData = sql query here ;
        $theData = DB::table('users')->get();
