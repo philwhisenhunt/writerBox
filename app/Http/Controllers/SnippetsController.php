@@ -29,6 +29,8 @@ class SnippetsController extends Controller
     public function show(){
 
         $snippets = Snippet::all();
+        //dump($snippets[0]);
+       // $snippets = [1,2,3,4,5];
        // return $snippets;
         // $snippet = DB::findOrFail($id);
         // return $snippet;

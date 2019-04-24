@@ -13,9 +13,9 @@
     </head>
     <body>
     <ul>
-    @foreach($snippets as $user)
+    @foreach($snippets as $snippet)
        
-            <li> {{ $user->email }} </li>
+            <li> {{ $snippet->title }} </li>
     
     @endforeach
     </ul>
