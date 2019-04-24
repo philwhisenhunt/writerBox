@@ -32,3 +32,5 @@ Route::get('/snippets/post{$id}', 'SnippetsController@show');
 Route::get('/users/{user}', function (App\User $user) {
     return $user->email;
 });
+
+Route::get('/snippets', 'SnippetsController@show');

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Project;
+use App\Snippet;
 use Illuminate\Support\Facades\DB;
 
 class SnippetsController extends Controller
@@ -26,9 +26,12 @@ class SnippetsController extends Controller
         return view('snippets.create');
     }
 
-    public function show($id){
-        $snippet = DB::findOrFail($id);
-        return $snippet;
+    public function show(){
+
+        $snippets = Snippet::all();
+       // return $snippets;
+        // $snippet = DB::findOrFail($id);
+        // return $snippet;
        
         /*
        $theData = DB::table('users')->get();
@@ -37,7 +40,7 @@ class SnippetsController extends Controller
        */
     
         
-       return view('snippets.post', ['theData'=>$theData]);
+       return view('snippets.post', ['snippets' => $snippets]);
 
     }
 }
