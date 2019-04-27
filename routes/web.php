@@ -26,7 +26,7 @@ Route::get('/test', function (){
 Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
 
 //Route::get('/snippets/create', 'SnippetsController@create');
-
+ 
 //Route::get('/snippets/post{$id}', 'SnippetsController@show');
 
 Route::get('/users/{user}', function (App\User $user) {
@@ -36,6 +36,9 @@ Route::get('/users/{user}', function (App\User $user) {
 Route::get('/snippets/{snippet}', 'SnippetsController@show');
 Route::get('snippets/{snippet}/edit', 'SnippetsController@edit');
 
+Route::get('snippets/{id}', 'SnippetsController@show');
+
+
 /*
 GET /snippets (index of all of them)
 GET /snippets/create (create a new one)
@@ -44,3 +47,5 @@ POST /snippets (store)
 GET /projects/1/edit (edit)
 PATCH /projects/1 (update)
 DELETE /projects/1 (destroy)
+
+*/
