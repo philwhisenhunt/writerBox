@@ -28,6 +28,7 @@ class SnippetsController extends Controller
 
     public function show($id){
 
+        //connects to snippets/{id} 
         $snippets = Snippet::findOrFail($id);
      
     
