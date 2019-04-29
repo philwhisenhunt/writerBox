@@ -30,6 +30,7 @@ class SnippetsController extends Controller
 
         //connects to snippets/{id} 
         $snippets = Snippet::findOrFail($id);
+        dump($snippets);
      
     
         
