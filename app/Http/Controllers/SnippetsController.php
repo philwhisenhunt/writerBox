@@ -29,12 +29,13 @@ class SnippetsController extends Controller
     public function show($id){
 
         //connects to snippets/{id} 
-        $snippets = Snippet::find($id);
-        dump($snippets);
+        // return($id);
+        $snippet = Snippet::find($id);
+        //dump($snippets);
      
     
         
-       return view('snippets.show', compact('snippets'));
+       return view('snippets.show', compact('snippet'));
 
     }
 }

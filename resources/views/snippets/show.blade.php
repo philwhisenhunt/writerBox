@@ -13,10 +13,10 @@
     </head>
     <body>
 
-    @foreach ($snippets as $snippet)
         <h1 class="title">{{ $snippet->title}}</h1>
+        <h3 class="title">{{ $snippet->full_entry}}</h3>
 
-    @endforeach
+    
         
         <script src="" async defer></script>
     </body>
