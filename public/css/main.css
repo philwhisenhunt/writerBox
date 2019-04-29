@@ -11,3 +11,22 @@ a{
     text-decoration-color: red;
     text-decoration: none;
 }
+
+h1{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+}
+
+body{
+    background: lightcoral;
+}
+
+.main-content{
+    margin: auto;
+    width: 80%;
+}
+
+.title-bar{
+    text-align: center;
+}

@@ -9,17 +9,17 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-
-        <h1 class="title">{{ $snippet->title}}</h1>
-        <h3 class="title">{{ $snippet->full_entry}}</h3>
-        <button>Edit</button>
-        <button>Delete</button>
-
-    
+    <div class="main-content">
+        <div class="title-bar">
+            <h1>Snippet Site</h1>
+        </div>
+                @yield('content')
         
+        
+        </div>
         <script src="" async defer></script>
     </body>
 </html>

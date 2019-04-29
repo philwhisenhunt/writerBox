@@ -37,6 +37,9 @@ Route::get('/snippets/{snippet}', 'SnippetsController@show');
 Route::get('snippets/{snippet}/edit', 'SnippetsController@edit');
 
 Route::get('snippets/{id}', 'SnippetsController@show');
+Route::get('/layoutviewer', function(){
+    return view('layout');
+});
 
 
 /*

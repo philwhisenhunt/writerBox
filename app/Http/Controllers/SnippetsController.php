@@ -29,7 +29,7 @@ class SnippetsController extends Controller
     public function show($id){
 
         //connects to snippets/{id} 
-        // return($id);
+        //return($slug);
         $snippet = Snippet::find($id);
         //dump($snippets);
      
@@ -37,5 +37,11 @@ class SnippetsController extends Controller
         
        return view('snippets.show', compact('snippet'));
 
+    }
+
+    public function edit($id){
+        $snippet = Snippet::find($id);
+
+        return view('snippets.edit', compact('snippet'));
     }
 }

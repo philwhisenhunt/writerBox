@@ -18,6 +18,7 @@ class CreateSnippetsTable extends Migration
             $table->string('title');
             $table->text('full_entry');
             $table->timestamps();
+            $table->string('slug');
         });
     }
 
