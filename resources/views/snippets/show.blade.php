@@ -12,7 +12,11 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+
+    @foreach ($snippets as $snippet)
         <h1 class="title">{{ $snippet->title}}</h1>
+
+    @endforeach
         
         <script src="" async defer></script>
     </body>
