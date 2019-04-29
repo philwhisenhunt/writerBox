@@ -16,7 +16,7 @@
 
 
 </div>
-<button>Save</button>
+<button class="">Save</button>
 <button>Cancel</button>
 
 </form>
