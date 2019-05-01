@@ -23,7 +23,7 @@ Route::get('/test', function (){
 
 //Route::get('/snippets', 'SnippetsController@index');
 
-Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
+//Route::get('/snippets/{$snippetTitle}', 'SnippetsController@singlePost');
 
 //Route::get('/snippets/create', 'SnippetsController@create');
  
@@ -33,13 +33,15 @@ Route::get('/users/{user}', function (App\User $user) {
     return $user->email;
 });
 
-Route::get('/snippets/{snippet}', 'SnippetsController@show');
+//Route::get('/snippets/{snippet}', 'SnippetsController@show');
 Route::get('snippets/{snippet}/edit', 'SnippetsController@edit');
 
-Route::get('snippets/{id}', 'SnippetsController@show');
+//Route::get('snippets/{id}', 'SnippetsController@show');
 Route::get('/layoutviewer', function(){
     return view('layout');
 });
+
+Route::get('/snippets/create', 'SnippetsController@create');
 
 
 /*

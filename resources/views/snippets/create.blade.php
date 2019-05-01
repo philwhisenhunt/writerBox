@@ -1,29 +1,23 @@
-<!DOCTYPE html>
+@extends('layout')
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Create a new project
+@section('content')
 
-        </h1>
-     
-        <form action="POST" name="blog-form">
-            <div>
-                <input class="title-input" type="text" name="title">
-                <input class = "text-input" type="text" name="body">
 
-                <button name="submit-button">Submit</button>
 
-            </div>
+<form action="">
+    <div class="control">
+        <input type="text" class="input" name="title" placeholder="Title" value=""">
+    </div>
+    <div class="class">
 
-        </form>
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+        <div class="control">
+            <textarea name="body-of-snippet" class="textarea" cols="100" rows="10"></textarea>
+        </div>
+
+    </div>
+    <button class="">Save</button>
+    <button>Cancel</button>
+
+</form>
+
+@endsection

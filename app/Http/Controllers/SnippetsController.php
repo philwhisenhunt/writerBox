@@ -22,7 +22,7 @@ class SnippetsController extends Controller
     }
 
     public function create(){
-        $snippets = \App\Snippets::all();
+        //$snippets = \App\Snippets::all();
         return view('snippets.create');
     }
 
@@ -40,7 +40,7 @@ class SnippetsController extends Controller
     }
 
     public function edit($id){
-        $snippet = Snippet::find($id);
+        $snippet = Snippet::findOrFail($id);
 
         return view('snippets.edit', compact('snippet'));
     }
