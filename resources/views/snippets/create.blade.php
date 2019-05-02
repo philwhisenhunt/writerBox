@@ -3,10 +3,10 @@
 @section('content')
 
 
-
+<div class="main-content">
 <form action="">
     <div class="control">
-        <input type="text" class="input" name="title" placeholder="Title" value=""">
+        <input type="text" class="input" name="title" placeholder="Title" value="">
     </div>
     <div class="class">
 
@@ -19,5 +19,7 @@
     <button>Cancel</button>
 
 </form>
+
+</div>
 
 @endsection
