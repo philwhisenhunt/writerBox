@@ -15,6 +15,7 @@
     <div class="main-content">
         <div class="title-bar">
             <h1>Snippet Site</h1>
+            <a href="/snippets"><button> View All Snippets</button></a>
         </div>
                 @yield('content')
         
