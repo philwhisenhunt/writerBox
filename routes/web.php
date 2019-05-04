@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function (){
+Route::get('/', function (){
     $data2 = ['hello' => 'oldFriend'];
    
     return view('welcome', ['data2'=> $data2['hello']]);
