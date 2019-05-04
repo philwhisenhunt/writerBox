@@ -42,6 +42,7 @@ Route::get('/layoutviewer', function(){
 });
 
 Route::get('/snippets/create', 'SnippetsController@create');
+Route::get('/snippets', 'SnippetsController@index');
 
 
 /*

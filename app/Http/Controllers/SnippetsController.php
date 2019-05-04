@@ -11,6 +11,7 @@ class SnippetsController extends Controller
     //
     public function index(){
 
+        die("hello");
         $snippets = \App\Snippets::all();
         //return $snippets;
         return view('snippets.index', ['snippets' => $snippets]);
