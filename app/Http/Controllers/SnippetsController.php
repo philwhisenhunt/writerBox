@@ -11,14 +11,14 @@ class SnippetsController extends Controller
     //
     public function index(){
 
-        die("hello");
-        $snippets = \App\Snippets::all();
+      
+        $snippets = \App\Snippet::all();
         //return $snippets;
         return view('snippets.index', ['snippets' => $snippets]);
     }
 
     public function singlePost(){
-        $snippets = \App\Snippets::all();
+        $snippets = \App\Snippet::all();
         return view('snippets.single');
     }
 
