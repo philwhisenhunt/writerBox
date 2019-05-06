@@ -12,9 +12,10 @@
      <h1>Snippets</h1>
 
      @foreach ($snippets as $snippet)
-       <a href="/{$snippet->title"><h3 class='snippet-title'>{{ $snippet->title }}</h3></a>
+       <a href="/snippet/{{$snippet->id}}"><h3 class='snippet-title'>{{ $snippet->title }}</h3></a>
 
         <p>{{ $snippet->full_entry }}</p>
+
      @endforeach
         
         <script src="" async defer></script>
