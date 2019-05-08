@@ -10,8 +10,11 @@
     </head>
     <body>
      <!-- The post goes here -->
+
+     foreach($snippets as $snippet)
      <h3>{{ $snippets->title }}</h3>
      <p>{{ $snippets->full_entry }}</p>
+     @endforeach
         
         <script src="" async defer></script>
     </body>
