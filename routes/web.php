@@ -15,11 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function (){
-    $data2 = ['hello' => 'oldFriend'];
+// Route::get('/', function (){
+//     $data2 = ['hello' => 'oldFriend'];
    
-    return view('welcome', ['data2'=> $data2['hello']]);
-});
+//     return view('welcome', ['data2'=> $data2['hello']]);
+// });
 
 //Route::get('/snippets', 'SnippetsController@index');
 
