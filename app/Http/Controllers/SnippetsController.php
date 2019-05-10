@@ -19,7 +19,8 @@ class SnippetsController extends Controller
 
     public function singlePost(){
         $snippets = \App\Snippet::all();
-        return view('snippets.single', compact('snippets'));
+       return $snippets;
+        // return view('snippets.single', compact('snippets'));
     }
 
     public function create(){
