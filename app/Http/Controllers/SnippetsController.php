@@ -17,10 +17,10 @@ class SnippetsController extends Controller
         return view('snippets.index', ['snippets' => $snippets]);
     }
 
-    public function singlePost(){
+    public function singlePost($id){
         $snippets = \App\Snippet::all();
-       return $snippets;
-        // return view('snippets.single', compact('snippets'));
+        return $snippets[$id];
+         //return view('snippets.single', compact('snippets'));
     }
 
     public function create(){
