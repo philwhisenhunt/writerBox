@@ -36,7 +36,7 @@ Route::get('/users/{user}', function (App\User $user) {
 //Route::get('/snippets/{snippet}', 'SnippetsController@show');
 Route::get('snippets/{snippet}/edit', 'SnippetsController@edit');
 
-Route::get('/snippets/5', 'SnippetsController@singlePost');
+Route::get('/snippets/{id}', 'SnippetsController@singlePost');
 Route::get('/layoutviewer', function(){
     return view('layout');
 });
