@@ -12,7 +12,7 @@
      <h1>Snippets</h1>
 
      @foreach ($snippets as $snippet)
-       <a href="/snippet/{{$snippet->id}}"><h3 class='snippet-title'>{{ $snippet->title }}</h3></a>
+       <a href="/snippets/{{$snippet->id}}"><h3 class='snippet-title'>{{ $snippet->title }}</h3></a>
 
         <p>{{ $snippet->full_entry }}</p>
 

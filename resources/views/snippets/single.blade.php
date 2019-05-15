@@ -15,6 +15,9 @@
      <h3>{{ $snippet->title }}</h3>
      <p>{{ $snippet->full_entry }}</p>
      @endforeach
+
+     <button>Edit</button>
+     <button class="delete"></button>
         
         <script src="" async defer></script>
     </body>
