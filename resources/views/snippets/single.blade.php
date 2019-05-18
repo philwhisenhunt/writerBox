@@ -7,7 +7,7 @@
      @endforeach
     <div class="main-content">
 
-     <button class="editing-buttons">Edit</button>
-     <button class="editing-buttons">Delete</button>
+     <button class="editing-buttons" name="edit">Edit</button>
+     <button class="editing-buttons" name="delete">Delete</button>
      </div>
 @endsection
