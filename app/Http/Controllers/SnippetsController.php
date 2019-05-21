@@ -47,4 +47,10 @@ class SnippetsController extends Controller
 
         return view('snippets.edit', compact('snippet'));
     }
+
+    public function destroy($id){
+        $snippets = \App\Snippet::all()->where('id', $id);
+        return view('snippets.single', ['snippets' => $snippets]);
+
+    }
 }
