@@ -52,7 +52,7 @@ class SnippetsController extends Controller
         $snippets = \App\Snippet::all()->where('id', $id);
         // return view('snippets.single', ['snippets' => $snippets]);
         // DB::table('users')->where('votes', '>', 100)->delete();
-        DB::table('snippets')->where('id', '=', $id);
+        DB::table('snippets')->where('id', '=', $id)->delete();
         return "It was done, $id is gone.";
     }
 }
