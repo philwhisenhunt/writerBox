@@ -7,7 +7,7 @@
      @endforeach
     <div class="main-content">
 
-     <button class="editing-buttons" name="edit">Edit</button>
+     <a href="/snippet/{id}/edit"><button class="editing-buttons" name="edit">Edit</button></a>
     <a href="/snippets/{id}/delete"><button class="editing-buttons" name="delete">Delete</button></a> 
      </div>
 @endsection
