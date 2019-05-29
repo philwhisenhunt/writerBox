@@ -54,5 +54,6 @@ class SnippetsController extends Controller
         // DB::table('users')->where('votes', '>', 100)->delete();
         DB::table('snippets')->where('id', '=', $id)->delete();
         return "It was done, $id is gone.";
+        //needs to have a warning before deleting
     }
 }
