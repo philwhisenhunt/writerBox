@@ -17,6 +17,9 @@
            <a href="/"><h1>Snippet Site</h1></a> 
         </div>
                 @yield('content')
+
+                <a href="/snippets/create"><button>Create New Snippet</button></a>
+
         
         
         </div>

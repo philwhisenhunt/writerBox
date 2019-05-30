@@ -9,5 +9,6 @@
         <p>{{ $snippet->full_entry }}</p>
 
      @endforeach
+
         
 @endsection
