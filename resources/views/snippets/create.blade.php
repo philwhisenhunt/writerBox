@@ -15,7 +15,7 @@
         </div>
 
     </div>
-    <button class="">Save</button>
+    <button class="" name="Saver"type="POST">Save</button>
     <button>Cancel</button>
 
 </form>
