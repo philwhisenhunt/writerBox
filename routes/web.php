@@ -46,7 +46,7 @@ Route::get('/layoutviewer', function(){
 Route::get('/snippets/{id}/edit', 'SnippetsController@edit');
 Route::post('/snippets/{id}/edit', 'SnippetsController@update');
 Route::get('/snippets/{id}/delete', 'SnippetsController@destroy');
-
+Route::post('/snippets/{id}/delete', 'SnippetsController@destroy'); //would this overwrite it?
 
 Route::get('/snippets', 'SnippetsController@index');
 
