@@ -29,6 +29,7 @@ class SnippetsController extends Controller
         Post::create([
 
             'title' => title,
+            'id' => id
            
         ]);
 
