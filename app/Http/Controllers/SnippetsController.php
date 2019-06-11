@@ -64,4 +64,11 @@ class SnippetsController extends Controller
         return "It was done, $id is gone.";
         //needs to have a warning before deleting
     }
+
+    public function store(Snippet $snippet){
+        Snippet::create([
+            'id' => $snippet->$id,
+            'title'=>request('title')
+        ]);
+    }
 }
