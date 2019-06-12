@@ -67,8 +67,10 @@ class SnippetsController extends Controller
 
     public function store(Snippet $snippet){
         Snippet::create([
-            'id' => $snippet->$id,
-            'title'=>request('title')
+            'id' => $snippet->$id, //but where does the id come from?
+            //The table is set to autoincrement. 
+            'title'=>request('title'),
+            'full_entry'=>request('body')
         ]);
     }
 }
