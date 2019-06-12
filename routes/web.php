@@ -49,6 +49,9 @@ Route::get('/snippets/{id}/delete', 'SnippetsController@destroy');
 Route::post('/snippets/{id}/delete', 'SnippetsController@destroy'); //would this overwrite it?
 
 Route::get('/snippets', 'SnippetsController@index');
+Route::post('/snippets/create', 'SnippetsController@view');
+
+Route::post('/snippets/create', 'SnippetsController@store');
 
 
 /*

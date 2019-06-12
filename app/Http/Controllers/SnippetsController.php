@@ -75,4 +75,8 @@ class SnippetsController extends Controller
 
         return back();
     }
+
+    public function make(Snippet $snippet){
+        return view('snippets.create', compact('snippet'));
+    }
 }
