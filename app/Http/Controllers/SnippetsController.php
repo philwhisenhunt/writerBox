@@ -72,5 +72,7 @@ class SnippetsController extends Controller
             'title'=>request('title'),
             'full_entry'=>request('body')
         ]);
+
+        return back();
     }
 }
