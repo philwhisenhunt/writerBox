@@ -70,7 +70,7 @@ class SnippetsController extends Controller
             'id' => $snippet->$id, //but where does the id come from?
             //The table is set to autoincrement. 
             'title'=>request('title'),
-            'full_entry'=>request('body')
+            'full_entry'=>request('body-of-snippet')
         ]);
 
         return back();
