@@ -65,9 +65,11 @@ class SnippetsController extends Controller
         //needs to have a warning before deleting
     }
 
-    public function store(Snippet $snippet){
-        $snippet = Snippet::create([
-            'id' => bigIncrements('id'), //but where does the id come from?
+    public function store(){
+        // $snippet = new Snippet;
+        
+        Snippet::create([
+            // 'id' => bigIncrements('id'), //but where does the id come from?
             //The table is set to autoincrement. 
             'title'=>request('title'),
             'full_entry'=>request('body-of-snippet')
