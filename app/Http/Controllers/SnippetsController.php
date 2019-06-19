@@ -25,7 +25,7 @@ class SnippetsController extends Controller
     }
 
     public function create(){
-        //$snippets = \App\Snippets::all();
+        // $snippets = \App\Snippets::all();
         Post::create([
 
             'title' => title,

@@ -51,7 +51,7 @@ Route::post('/snippets/{id}/delete', 'SnippetsController@destroy'); //would this
 Route::get('/snippets', 'SnippetsController@index');
 Route::post('/snippets/create', 'SnippetsController@create');
 
-Route::get('/snippets/create', 'SnippetsController@make');
+// Route::get('/snippets/create', 'SnippetsController@make');
 
 
 /*
