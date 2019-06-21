@@ -35,7 +35,6 @@ Route::get('/users/{user}', function (App\User $user) {
 
 //Route::get('/snippets/{snippet}', 'SnippetsController@show');
 Route::get('snippets/{snippet}/edit', 'SnippetsController@edit');
-Route::get('/snippets/create', 'SnippetsController@create');
 
 
 Route::get('/snippets/{id}', 'SnippetsController@singlePost');
@@ -49,6 +48,8 @@ Route::get('/snippets/{id}/delete', 'SnippetsController@destroy');
 Route::post('/snippets/{id}/delete', 'SnippetsController@destroy'); //would this overwrite it?
 
 Route::get('/snippets', 'SnippetsController@index');
+
+Route::get('/snippets/create', 'SnippetsController@make');
 Route::post('/snippets/create', 'SnippetsController@create');
 
 // Route::get('/snippets/create', 'SnippetsController@make');
