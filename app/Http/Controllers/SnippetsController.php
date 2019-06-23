@@ -9,13 +9,13 @@ use Illuminate\Support\Facades\DB;
 class SnippetsController extends Controller
 {
     //
-    // public function index(){
+    public function index(){
 
       
-    //     $snippets = \App\Snippet::all();
-    //     //return $snippets;
-    //     return view('snippets.index', ['snippets' => $snippets]);
-    // }
+        $snippets = \App\Snippet::all();
+        //return $snippets;
+        return view('snippets.index', ['snippets' => $snippets]);
+    }
 
     public function singlePost($id){
         // $snippets = \App\Snippet::all();
@@ -26,6 +26,7 @@ class SnippetsController extends Controller
 
     public function create(){
         // $snippets = \App\Snippets::all();
+        echo "hi";
         Post::create([
 
             'title' => title,
