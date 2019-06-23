@@ -37,7 +37,7 @@ Route::get('/users/{user}', function (App\User $user) {
 Route::get('snippets/{snippet}/edit', 'SnippetsController@edit');
 
 
-// Route::get('/snippets/{id}', 'SnippetsController@singlePost');
+Route::get('/snippets/{id}', 'SnippetsController@singlePost');
 Route::get('/layoutviewer', function(){
     return view('layout');
 });
@@ -49,8 +49,8 @@ Route::post('/snippets/{id}/delete', 'SnippetsController@destroy'); //would this
 
 Route::get('/snippets', 'SnippetsController@index');
 
-Route::get('/snippets/create', 'SnippetsController@make');
-Route::post('/snippets/create', 'SnippetsController@create');
+Route::get('/create', 'SnippetsController@make');
+Route::post('/create', 'SnippetsController@create');
 
 // Route::get('/snippets/create', 'SnippetsController@make');
 
