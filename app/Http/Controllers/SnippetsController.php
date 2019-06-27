@@ -35,7 +35,7 @@ class SnippetsController extends Controller
            
         ]);
 
-        return view('snippets.create');
+        return redirect('/');
     }
 
     public function show($id){
