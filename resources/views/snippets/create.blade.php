@@ -4,7 +4,7 @@
 
 
 <div class="main-content">
-<form action="POST">
+<form method="POST">
     <div class="control">
         <input type="text" class="input" name="title" placeholder="Title" value="">
     </div>
