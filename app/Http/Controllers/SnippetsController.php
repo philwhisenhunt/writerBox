@@ -27,7 +27,7 @@ class SnippetsController extends Controller
     public function create(){
         // $snippets = \App\Snippets::all();
         echo "hi";
-        die();
+        
         Post::create([
 
             'title' => title,
@@ -81,6 +81,7 @@ class SnippetsController extends Controller
     }
 
     public function make(){
+        die('here');
         return view('snippets.create');
     }
 }
