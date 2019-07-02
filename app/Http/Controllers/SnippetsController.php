@@ -27,14 +27,10 @@ class SnippetsController extends Controller
     public function create(){
         // $snippets = \App\Snippets::all();
         echo "hi";
-        $snippet = new Snippet;
-        Snippet::create([
-
-            'title' => title,
-            'id' => id,
-            'full_entry'
-           
-        ]);
+        $snippet = new Snippet();
+        $snippet->title = request('title');
+        $snippet->full_entry = request('body-of-snippet');
+        $snippet->save();
 
         return redirect('/');
     }
