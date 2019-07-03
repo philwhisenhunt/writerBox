@@ -32,7 +32,7 @@ class SnippetsController extends Controller
         $snippet->full_entry = request('body-of-snippet');
         $snippet->save();
 
-        return redirect('/');
+        return redirect('/create');
     }
 
     public function show($id){
