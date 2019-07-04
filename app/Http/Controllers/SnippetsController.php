@@ -26,7 +26,7 @@ class SnippetsController extends Controller
 
     public function create(){
         // $snippets = \App\Snippets::all();
-        echo "hi";
+        echo "hi"; die();
         $snippet = new Snippet();
         $snippet->title = request('title');
         $snippet->full_entry = request('body-of-snippet');
