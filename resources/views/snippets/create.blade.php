@@ -4,7 +4,8 @@
 
 
 <div class="main-content">
-<form method="POST">
+<form method="POST" action="/create">
+{{csrf_field()}}
     <div class="control">
         <input type="text" class="input" name="title" placeholder="Title" value="">
     </div>
