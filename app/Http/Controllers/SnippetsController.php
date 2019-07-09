@@ -66,14 +66,16 @@ class SnippetsController extends Controller
     public function store(){
         // $snippet = new Snippet;
         
-        Snippet::create([
-            // 'id' => bigIncrements('id'), //but where does the id come from?
-            //The table is set to autoincrement. 
-            'title'=>request('title'),
-            'full_entry'=>request('body-of-snippet')
-        ]);
+        // Snippet::create([
+        //     // 'id' => bigIncrements('id'), //but where does the id come from?
+        //     //The table is set to autoincrement. 
+        //     'title'=>request('title'),
+        //     'full_entry'=>request('body-of-snippet'),
 
-        return back();
+        // ]);
+
+        // return back();
+        return request()->all();
     }
 
     public function make(){
