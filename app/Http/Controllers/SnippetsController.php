@@ -75,7 +75,7 @@ class SnippetsController extends Controller
         // ]);
 
         // return back();
-        return request()->all();
+        return request('title');
     }
 
     public function make(){
